@@ -1,0 +1,125 @@
+{
+  "_from": "@gemachain/mango-client@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-uE2I8MEVLSaby3PiNmV0g5JJBi2X/TssHtyKqHPkgBuDC/3MSyg0yfsTQr59Sd/cIlr8Bnm6+J591hBRjfN7jw==",
+  "_location": "/@gemachain/mango-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@gemachain/mango-client@1.0.0",
+    "name": "@gemachain/mango-client",
+    "escapedName": "@gemachain%2fmango-client",
+    "scope": "@gemachain",
+    
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@b lockworks-foundation/mango-client/-/mango-client-1.0.0.tgz",
+  "_shasum": "12921dbeba773dcb7a085dafb1de6428d05871c1",
+  "_spec": "@gemachain/mango-client@1.0.0",
+  "_where": "/home/imentus/testing",
+  "author": "Blockworks Foundation <hello@blockworks.foundation> (https://blockworks.foundation)",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "maintained node versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/ManojSharma5500/mango-client/issues"
+  },
+  "dependencies": {
+    "@project-serum/serum": "0.13.55",
+    "@project-serum/sol-wallet-adapter": "^0.2.0",
+    "@solana/spl-token": "^0.1.6",
+    "@solana/web3.js": "1.21.0",
+    "@gemachain/gpl-token": "0.0.0",
+    "@gemachain/web3.js": "0.0.0-development-2",
+    "axios": "^0.21.1",
+    "big.js": "^6.1.1",
+    "bigint-buffer": "^1.1.5",
+    "bn.js": "^5.1.0",
+    "buffer-layout": "^1.2.1",
+    "yargs": "^17.0.1"
+  },
+  "deprecated": false,
+  "description": "Client to interact with the Mango program on Solana",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/big.js": "^6.1.1",
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.2.14",
+    "@types/jest": "^26.0.9",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^15.12.4",
+    "@types/yargs": "latest",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^7.2.0",
+    "mocha": "^8.4.0",
+    "prettier": "^2.0.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": ">=14.15.3"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/ManojSharma5500/mango-client#readme",
+  "license": "MIT",
+  "main": "lib/src/index.js",
+  "name": "@gemachain/mango-client",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManojSharma5500/mango-client.git"
+  },
+  "resolutions": {
+    "bn.js": "5.1.3",
+    "@types/bn.js": "5.1.0",
+    "@solana/web3.js": "^1.21.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "cli": "ts-node src/cli.ts",
+    "crank": "ts-node src/crank.ts",
+    "format": "prettier --check .",
+    "heroku-postbuild": "npm run build",
+    "keeper": "ts-node src/keeper.ts",
+    "launch-group": "ts-node test/initDevnetGroup.ts",
+    "launch-realistic-group": "ts-node test/initRealisticDevnetGroup.ts",
+    "lint": "eslint . --ext ts --ext tsx --ext js --quiet",
+    "liquidator": "ts-node src/liquidator.ts",
+    "mint-devnet": "ts-node src/mintDevnet.ts",
+    "prepare": "yarn clean && yarn build",
+    "scratch": "ts-node src/scratch.ts",
+    "shell": "node -e \"$(< shell)\" -i --experimental-repl-await",
+    "test": "mocha -r ts-node/register test/**/*.test.ts --timeout 0",
+    "test-accounts": "ts-node test/accounts.test.ts",
+    "test-compute": "ts-node test/compute.test.ts",
+    "test-liquidator": "ts-node test/liquidator.test.ts",
+    "test:build": "yarn build && yarn",
+    "test:lint": "eslint src",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "types": "lib/src/index.d.ts",
+  "version": "1.0.0",
+  "directories": {
+    "lib": "lib"
+  }
+}
