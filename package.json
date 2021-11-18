@@ -24,7 +24,7 @@
   "_shasum": "12921dbeba773dcb7a085dafb1de6428d05871c1",
   "_spec": "@gemachain/mango-client@1.0.0",
   "_where": "/home/imentus/testing",
-  "author": "Blockworks Foundation <hello@blockworks.foundation> (https://blockworks.foundation)",
+  "author": "Gemachain Foundation <hello@gemachainn.foundation> (https://gemachain.foundation)",
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -32,7 +32,7 @@
     "maintained node versions"
   ],
   "bugs": {
-    "url": "https://github.com/ManojSharma5500/mango-client/issues"
+    "url": "https://github.com/gemacoin/mango-client/issues"
   },
   "dependencies": {
     "@project-serum/serum": "0.13.55",
@@ -40,7 +40,7 @@
     "@solana/spl-token": "^0.1.6",
     "@solana/web3.js": "1.21.0",
     "@gemachain/gpl-token": "0.0.0",
-    "@gemachain/web3.js": "0.0.0-development-2",
+    "@gemachain/web3.js": "0.0.0-development-3",
     "axios": "^0.21.1",
     "big.js": "^6.1.1",
     "bigint-buffer": "^1.1.5",
@@ -76,7 +76,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/ManojSharma5500/mango-client#readme",
+  "homepage": "https://github.com/gemacoin/mango-client#readme",
   "license": "MIT",
   "main": "lib/src/index.js",
   "name": "@gemachain/mango-client",
@@ -86,7 +86,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ManojSharma5500/mango-client.git"
+    "url": "git+https://github.com/gemacoin/mango-client.git"
   },
   "resolutions": {
     "bn.js": "5.1.3",
